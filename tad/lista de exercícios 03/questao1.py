@@ -11,7 +11,7 @@ class Conta:
         self.saldo = saldo
     
     def __str__(self):
-        return f"Número da conta: {self.numero_conta}, Nome do Correntista: {self.nome_correntista}, Saldo: {self.saldo}"
+        return f"Número da conta: {self.numero_conta}, Nome do Correntista: {self.nome_correntista}, Saldo: R$ S{self.saldo}"
 
 
 contas = []
