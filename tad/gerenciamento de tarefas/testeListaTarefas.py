@@ -86,5 +86,20 @@ def testeAdicionarPosicaoInvalida():
     print(lista)
     print(lista.tamanho) # Saída 9
 
+def testeObterTarefa():
+    lista = criaListaPreechida()
 
-testeAdicionarPosicaoInvalida()
+    print(lista.obter_tarefa(3)) #Saída: Tarefa("Resolver exercícios de Álgebra", "Alta")
+
+def testeRemoverTarefa():
+    lista = criaListaPreechida()
+    print(lista.tamanho)
+    print(lista)
+
+    lista.remover_tarefa(3)
+    
+    print(lista)
+    print(lista.tamanho)
+
+testeRemoverTarefa()
+
