@@ -47,7 +47,10 @@ class ListaTarefas:
             self.tamanho -= 1
 
     def contem(self, tarefa):
-        pass
+        for i in range(0, self.tamanho):
+            if self.tarefas[i].descricao == tarefa.descricao:
+                return True
+        return False
 
     def tamanho(self):
-        pass    
+        return self.tamanho
