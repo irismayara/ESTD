@@ -2,17 +2,19 @@ class Pilha:
     def __init__(self):
         self.pilha = []
 
-    def __str__(self):
-        pass
+    def __len__(self):
+        return len(self.pilha)
 
-    def push(self):
-        pass
+    def push(self, elemento):
+        self.pilha.append(elemento)
 
     def pop(self):
-        pass
+        if not self.isEmpty:
+            return self.pilha.pop()
 
     def top(self):
-        pass
+        if not self.isEmpty:
+            return self.pilha[-1]
 
     def isEmpty(self):
-        pass
+        return len(self.pilha) == 0
