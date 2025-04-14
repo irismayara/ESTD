@@ -42,7 +42,7 @@ deque.add_last(6)
 deque.add_last(7)
 deque.add_last(8)
 
-while deque not is_empty():
+while not deque.is_empty():
     f.enqueue(deque.first())
     deque.delete_first()
 
@@ -63,3 +63,41 @@ print(f)
 #para que andem no mesmo compasso; jugo.
 
 
+
+#Descreva como implementar um deque através da utilização de duas pilhas. 
+#Qual seria o tempo de execução dos métodos?
+
+class DequePilha:
+
+    def __innit__(self):
+        self.pilha1 = Pilha()
+        self.pilha2 = Pilha()
+        self.tamanho = 0
+        self.first = None
+        self.last = None
+
+    def add_first(self, e):
+        pass
+    
+    def add_last(self, e):
+        pass
+
+    def delete_first(self):
+        pass
+
+    def delete_last(self)
+        pass
+
+    def first(self):
+        pass
+
+    def last(self):
+        pass
+
+    def trocar(self):
+        if(self.pilha1.is_empty()):
+            while not pilha2.is_empty():
+                self.pilha1.push(pilha2.pop)
+        else:
+            while not pilha1.is_empty():
+                self.pilha2.push(pilha1.pop)
