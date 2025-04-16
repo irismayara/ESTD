@@ -25,8 +25,8 @@ class Fila:
 
     def enqueue(self, e):
         if self.tamanho == len(self.dados):
-            raise FilaCheia('A fila está cheia.')
-            #self.altera_capacidade(2 * len(self.dados))
+            #raise FilaCheia('A fila está cheia.')
+            self.altera_capacidade(2 * len(self.dados))
         disponivel = (self.inicio + self.tamanho) % len(self.dados)
         self.dados[disponivel] = e
         self.tamanho += 1

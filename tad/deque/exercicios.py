@@ -1,4 +1,6 @@
-from Fila import *S
+from tad.deque.Deque import *
+from tad.fila.Fila import *
+from tad.pilha.Pilha import *
 
 #1. Qual os valores retornados durante a seguinte série de 
 #operações em uma deque "d" inicialmente inicialmente vazio? 
@@ -70,8 +72,8 @@ print(f)
 class DequePilha:
 
     def __innit__(self):
-        self.pilha1 = Pilha()
-        self.pilha2 = Pilha()
+        self.front = Pilha()
+        self.back = Pilha()
         self.tamanho = 0
         self.first = None
         self.last = None
@@ -85,7 +87,7 @@ class DequePilha:
     def delete_first(self):
         pass
 
-    def delete_last(self)
+    def delete_last(self):
         pass
 
     def first(self):
@@ -96,8 +98,8 @@ class DequePilha:
 
     def trocar(self):
         if(self.pilha1.is_empty()):
-            while not pilha2.is_empty():
-                self.pilha1.push(pilha2.pop)
+            while not self.pilha2.is_empty():
+                self.pilha1.push(self.pilha2.pop)
         else:
-            while not pilha1.is_empty():
-                self.pilha2.push(pilha1.pop)
+            while not self.pilha1.is_empty():
+                self.pilha2.push(self.pilha1.pop)
