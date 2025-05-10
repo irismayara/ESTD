@@ -22,9 +22,12 @@ class ListaEncadeada:
                 atual = atual.getNext()
             atual.setNext(novo_noh)
 
-    def remove_inicio(self):  
+    def remove_inicio(self): 
         if self.head is not None:
+            removido = self.head.getData()
             self.head = self.head.getNext()
+            return removido
+        return None
 
     def size(self):
         atual = self.head
