@@ -50,7 +50,7 @@ compreensível e didático.
 ## **Conteúdo Consultado para Realização do Projeto**
 ----------------------------------------------
 - Código-base das aulas: https://github.com/ricardo9n/estd/tree/main/listas-encadeadas
-- How to Use Python Threading Lock to Prevent Race Conditions
+- How to Use Python Threading Lock to Prevent Race Conditions: https://www.pythontutorial.net/python-concurrency/python-threading-lock/
 - O que é uma condição de corrida? – Stack Overflow:
   https://pt.stackoverflow.com/questions/159342/o-que-%c3%a9-uma-condi%c3%a7%c3%a3o-de-corrida
 - Colorama – PyPI: https://pypi.org/project/colorama/
